@@ -8,7 +8,7 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 
 module.exports = () => {
 
-  console.log(path.resolve(__dirname, 'dist'));
+  
 
   return {
     mode: 'development',
@@ -24,7 +24,7 @@ module.exports = () => {
 
       // Generates the HTML file for the app
       new HtmlWebpackPlugin({
-        template: 'index.html',
+        template: './index.html',
         title: 'JATE',
       }),
       // Injects the custom service worker
@@ -35,6 +35,7 @@ module.exports = () => {
       // Generates a manifest.json file
       new WebpackPwaManifest({
         name: 'Just Another Text Editor',
+        fingerprints: false,
         short_name: 'JATE',
         description: 'A simple text editor that can be used offline',
         background_color: '#ffffff',
