@@ -58,3 +58,4 @@ Once the application is running, you can start using JATE to edit text. The cont
 - **Service Workers:** Utilizes Workbox to cache assets and ensure offline access.
 
 ### screenshot 
+![Hello image](/hello-image.png)
