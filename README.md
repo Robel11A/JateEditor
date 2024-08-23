@@ -59,3 +59,5 @@ Once the application is running, you can start using JATE to edit text. The cont
 
 ### screenshot 
 ![Hello image](/hello-image.png)
+![manifest image](/manifest.png)
+![service-worker](/service-worker.png)
